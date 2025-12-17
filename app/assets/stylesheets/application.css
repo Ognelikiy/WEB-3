@@ -1,6 +1,7 @@
 /* Импорт Bootstrap */
 @import "bootstrap";
 
+
 /* universal */
 body {
     padding-top: 60px;
@@ -95,32 +96,112 @@ footer ul li {
     margin-left: 15px;
 }
 
-/* footer */
-footer {
+/* ДОБАВЛЯЕМ НОВЫЕ СТИЛИ ДЛЯ РЕГИСТРАЦИИ */
+
+/* debug dump */
+.debug_dump {
+    clear: both;
+    float: left;
+    width: 100%;
     margin-top: 45px;
-    padding-top: 5px;
-    border-top: 1px solid #eaeaea;
-    color: #777;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #dee2e6;
 }
 
-footer a {
-    color: #555;
+/* sidebar */
+aside section.user_info {
+    margin-top: 20px;
 }
 
-footer a:hover {
-    color: #222;
+aside section {
+    padding: 10px 0;
+    margin-top: 20px;
 }
 
-footer small {
+aside section:first-child {
+    border: 0;
+    padding-top: 0;
+}
+
+aside section span {
+    display: block;
+    margin-bottom: 3px;
+    line-height: 1;
+}
+
+aside section h1 {
+    font-size: 1.4em;
+    text-align: left;
+    letter-spacing: -1px;
+    margin-bottom: 3px;
+    margin-top: 0px;
+}
+
+.gravatar {
     float: left;
+    margin-right: 10px;
+    border-radius: 5px;
 }
 
-footer ul {
-    float: right;
-    list-style: none;
+.gravatar_edit {
+    margin-top: 15px;
 }
 
-footer ul li {
-    float: left;
-    margin-left: 15px;
+/* forms */
+input, textarea, select, .uneditable-input {
+    border: 1px solid #bbb;
+    width: 100%;
+    margin-bottom: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+input {
+    height: auto !important;
+}
+
+/* error messages */
+#error_explanation {
+    color: #dc3545;
+}
+
+#error_explanation ul {
+    color: #dc3545;
+    margin: 0 0 30px 0;
+    padding-left: 20px;
+}
+
+.field_with_errors .form-control {
+    border-color: #dc3545;
+}
+
+.field_with_errors .form-control:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+/* flash messages */
+.alert {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
 }
