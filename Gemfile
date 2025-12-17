@@ -6,6 +6,7 @@ gem 'bootstrap', '~> 5.3.0'
 gem 'sassc-rails'
 gem 'importmap-rails'
 gem "rails-controller-testing"
+gem 'bcrypt', '~> 3.1.7'
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
 
