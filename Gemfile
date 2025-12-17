@@ -8,6 +8,9 @@ gem 'importmap-rails'
 gem "rails-controller-testing"
 gem 'bcrypt', '~> 3.1.7'
 gem 'pg', '1.6.2'
+gem 'sassc-rails'
+gem 'jquery-rails'
+gem 'popper_js', '~> 2.11.8'
 
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
